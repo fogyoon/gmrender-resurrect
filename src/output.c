@@ -199,7 +199,7 @@ int output_get_volume(float *value) {
 }
 int output_set_volume(float value) {
 	if (output_module && output_module->set_volume) {
-		return output_module->set_volume(value);
+		//return output_module->set_volume(value);
 	}
 	return -1;
 }
@@ -211,7 +211,7 @@ int output_get_mute(int *value) {
 }
 int output_set_mute(int value) {
 	if (output_module && output_module->set_mute) {
-		return output_module->set_mute(value);
+		//return output_module->set_mute(value);
 	}
 	return -1;
 }
